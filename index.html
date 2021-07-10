@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0018)https://sorta.moe/ -->
+<html lang="en" data-livestyle-extension="available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fucking Nothing</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1021.0" data-gr-ext-installed="">
+  <img id="loli" src="./loli.png" class="animate">
+  <script>
+    const audio = new Audio('fucking-nothing.mp3')
+    audio.load()
+    const loli = document.getElementById('loli')
+
+    let playing = false;
+    audio.onended = () => playing = false
+
+    function doTheThing() {
+      if (playing) return
+
+      audio.play().then(() => {
+        playing = true
+        loli.classList.remove('animate')
+        void loli.offsetWidth
+        loli.classList.add('animate')
+      })
+    }
+
+    document.addEventListener('click', doTheThing)
+    document.addEventListener('touchstart', doTheThing)
+    document.addEventListener('ready', doTheThing)
+  </script>
+
+
+<style>
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  img {
+    position: fixed;
+    bottom: 0px;
+    right: -275px;
+  }
+
+  .animate {
+    animation: kek 6.5s;
+  }
+
+  @keyframes kek {
+    0% { right: -275px; }
+
+    /* weird nod lmao */
+    9% { transform: rotate(0deg); }
+    10% { transform: rotate(-10deg); }
+    11% { transform: rotate(0deg); }
+
+    15% { transform: rotate(0deg); }
+    16% { transform: rotate(-10deg); }
+    17% { transform: rotate(0deg); }
+
+    20% { right: 0px; }
+
+    29% { transform: rotate(0deg) scale(1); }
+    31% { transform: rotate(-30deg) scale(1.5); }
+
+    53% { transform: rotate(-30deg) scale(1.5); }
+    55% { transform: rotate(-10deg) scale(1.6); }
+
+    65% { transform: rotate(-10deg) scale(1.6); }
+    67% { transform: rotate(-20deg) scale(1.7); }
+
+    76% { transform: rotate(-20deg) scale(1.7); }
+    78% { transform: rotate(-25deg) scale(2.0); }
+    80% { transform: rotate(10deg) scale(2.2); }
+    82% { transform: rotate(-35deg) scale(2.5); }
+    86% { transform: rotate(-20deg) scale(2.5); }
+
+    95% {
+      transform: rotate(-20deg) scale(2.5);
+      right: 0px;
+    }
+
+    100% {
+      transform: rotate(-20deg) scale(2.5);
+      right: -600px;
+    }
+  }
+</style>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
